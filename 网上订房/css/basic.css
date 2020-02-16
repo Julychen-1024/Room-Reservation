@@ -1,0 +1,215 @@
+/*页面整体设计*/
+body {
+    background-color: white;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 990px;
+	font-size:14px;
+}
+/*页眉*/
+header {
+    height: 330px;
+    background:url(../图片/酒店.jpg) no-repeat;
+    text-align: center;
+	width: 990px;
+}
+nav{
+    font-family:华文楷体;
+    display:block;
+    width:990px;
+    float:left;
+    text-align:center;
+    background-color:#FF9966;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+nav a:link,nav a:visited{
+    display:inline;
+    border-bottom:3px solid #fff;
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+}
+nav a:hover{
+    color:white;
+    background-color:#f47D31;
+}
+/*容器*/
+#container{
+    text-align: center;
+	width: 990px;
+	margin: 0px auto;
+    height: 490px;
+}
+
+/*左侧栏*/
+aside#leftAside {
+    float: left;
+    width: 200px;
+    height: 480px;
+    text-align: center;
+	background-color:#FBE5D6;
+}
+/*左侧栏-标题*/
+aside#leftAside h1{
+	height:40px;
+	margin:0px;
+}
+/*左侧栏-内容*/
+aside#leftAside div{
+	height:213px;
+    text-align: center;
+	margin-left:7px;
+}
+
+section{
+	float:left;
+}
+
+/*图片轮播*/
+section#silder {
+    float: left;
+    width: 520px;
+    height: 480px;
+    text-align: center;
+	margin-left:5px;
+}
+/*图片轮播-列表元素样式设置*/
+section#silder ul {
+    list-style: none;
+    position: relative;
+	width: 520px;
+    height: 480px;
+	padding:0;
+	margin:0;
+}
+/*图片轮播-列表选项元素样式设置*/
+section#silder li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 520px;
+    height: 480px;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+/*图片轮播-图片样式设置*/
+section#silder img {
+    width: 100%;
+    height: 100%;
+}
+/*图片轮播-隐藏效果设置*/
+.hide {
+    display: none;
+}
+
+/*右侧栏*/
+aside#rightAside {
+    float: left;
+    width: 260px;
+    height: 480px;
+    text-align: center;
+	overflow:hidden;
+	margin-left:5px;
+	background-color:#FBE5D6;
+}
+/*右侧栏-标题*/
+aside#rightAside h1{
+    width: 264px;
+    height: 40px;
+	margin:0px;
+	padding:0px;
+}
+/*右侧栏-新闻*/
+aside#rightAside table{
+    width:260px;
+    height: 170px;
+}
+/*右侧栏-联系我们*/
+aside#rightAside div#contact{
+    width: 264px;
+    height: 130px;
+}
+/*右侧栏-新闻-列表*/
+#news ul{
+    list-style: none;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+/*右侧栏-新闻-列表选项*/
+#news ul li{
+	height:20px;
+	line-height:20px;
+}
+/*右侧栏-新闻-超链接*/
+#news a{
+	text-decoration:none;
+	color:black;
+}
+
+/*产品展示栏*/
+section#productShow {
+	width:990px;
+    height: 295px;
+    clear: both;
+    text-align: center;
+	background-color:#E1E0DB;
+	margin-bottom:7px;
+	padding:0px;
+}
+/*产品展示栏-标题*/
+section#productShow  h1{
+    height: 40px;
+	margin:0px;
+	padding:0px;
+}
+/*产品展示栏-表格*/
+section#productShow table{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:245px;
+}
+/*产品展示栏-单元格*/
+section#productShow td{
+	height:50%;
+}
+/*产品展示栏-单元格内图片*/
+section#productShow td img{
+	width:100%;
+	height:100%;
+}
+/*放大图片页面*/
+#showImage{
+	z-index:99;
+	position:absolute;
+	left:20%;
+	top:415px;
+	width:850px;
+	height:500px;
+	background-color:white;
+	text-align:center;
+	display:none;
+}
+/*放大图片页面-关闭按钮*/
+#showImage button{
+	float:right;
+	margin:10px;
+	outline:none;
+	border:none;
+	background-color:transparent;
+}
+/*页脚*/
+footer {
+    text-align: center;
+	vertical-align:middle;
+    height: 70px;
+	background-color:#FF9966;
+	padding:7px 0;
+	float:left;
+	width:990px;
+}
